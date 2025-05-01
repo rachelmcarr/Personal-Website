@@ -1,0 +1,232 @@
+/* General Styling */
+body {
+    font-family: "Century Gothic", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  a, button {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Navigation */
+  .primaryNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    border-bottom: 2px solid white;
+  }
+  
+  .primaryNav h2 {
+    font-size: 1.8em;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navLinks a,
+  .navLinks button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: black;
+    transition: background-color 0.3s, font-weight 0.3s, border 0.3s;
+    border: none;
+  }
+  
+  .navLinks a:hover,
+  .navLinks button:hover {
+    background-color: #9d0208;
+    font-weight: bold;
+    border: 1px solid white;
+  }
+  
+  /* Intro */
+  .intro {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.1em;
+  }
+  
+  /* Sections */
+  section {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .job {
+    margin-bottom: 40px;
+  }
+  
+  .jobTitle {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+  }
+  
+  .company {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .date {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  /* Certifications */
+  .certGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+  
+  .certGallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .certGallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Education Logos */
+.wgu img,
+.lamar img,
+section.lamar img {
+  max-width: 150px;
+  height: auto;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Cert Gallery Image Resize */
+.certGallery img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+  
+  /* Contact Form */
+  .contact {
+    text-align: center;
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: inherit;
+    font-size: 1em;
+    background-color: #222;
+    color: white;
+  }
+  
+  .contactForm input:focus,
+  .contactForm textarea:focus {
+    outline: 2px solid #9d0208;
+  }
+  
+  .contactForm button {
+    align-self: flex-start;
+    padding: 12px 24px;
+    background: linear-gradient(to right, #9d0208, #b3001a);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .contactForm button:hover {
+    background: linear-gradient(to right, #b3001a, #9d0208);
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .primaryNav h2 {
+      font-size: 1.5em;
+    }
+  
+    .navLinks {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .certGallery {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .projects {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .project {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  }
+  
+  .project h3 {
+    margin-top: 0;
+  }
+  
+  .project a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #9d0208;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .project a:hover {
+    background-color: #c5001a;
+  }
+  
+  
