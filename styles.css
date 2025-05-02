@@ -288,6 +288,12 @@ section.lamar img {
   .social-links a:hover {
     transform: scale(1.2);
   }
+
+  .honors {
+    font-style: italic;
+    color: #ccc;
+  }
+  
   
   
   
