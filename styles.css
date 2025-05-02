@@ -25,6 +25,8 @@ body {
     padding: 10px 20px;
     background-color: black;
     border-bottom: 2px solid white;
+    flex-wrap: wrap;
+    position: relative;
   }
   
   .primaryNav h2 {
@@ -300,6 +302,7 @@ section.lamar img {
   cursor: pointer;
   font-size: 1.8em;
   color: white;
+  margin-left: auto;
 }
 
 /* Hide navLinks by default on mobile */
