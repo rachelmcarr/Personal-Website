@@ -1,121 +1,133 @@
 /* General Styling */
 body {
-    font-family: "Century Gothic", sans-serif;
-    margin: 0;
-    background-color: black;
-    color: white;
-    line-height: 1.6;
-  }
-  
-  h1, h2, h3 {
-    margin: 0;
-  }
-  
-  a, button {
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* Navigation */
-  .primaryNav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: black;
-    border-bottom: 2px solid white;
-    flex-wrap: wrap;
-    position: relative;
-  }
-  
-  .primaryNav h2 {
-    font-size: 1.8em;
-  }
-  
-  .navLinks {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .navLinks a,
-  .navLinks button {
-    padding: 8px 15px;
-    border-radius: 5px;
-    background-color: black;
-    transition: background-color 0.3s, font-weight 0.3s, border 0.3s;
-    border: none;
-  }
-  
-  .navLinks a:hover,
-  .navLinks button:hover {
-    background-color: black;
-    font-weight: bold;
-    border: 1px solid white;
-  }
-  
-  /* Intro */
-  .intro {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-    font-size: 1.1em;
-  }
-  
-  /* Sections */
-  section {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-  }
-  
-  ul {
-    list-style: disc;
-    padding-left: 20px;
-  }
-  
-  .job {
-    margin-bottom: 40px;
-  }
-  
-  .jobTitle {
-    font-size: 1.4em;
-    margin-bottom: 5px;
-  }
-  
-  .company {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: white;
-  }
-  
-  .date {
-    font-style: italic;
-    margin-bottom: 10px;
-  }
-  
-  /* Certifications */
-  .certGallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    max-width: 1000px;
-    margin: 20px auto;
-  }
-  
-  .certGallery img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s;
-  }
-  
-  .certGallery img:hover {
-    transform: scale(1.05);
-  }
+  font-family: "Century Gothic", sans-serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+  line-height: 1.6;
+}
 
-  /* Education Logos */
+h1, h2, h3 {
+  margin: 0;
+}
+
+a, button {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+/* Navigation */
+.primaryNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  border-bottom: 2px solid white;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.primaryNav h2 {
+  font-size: 1.8em;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks a,
+.navLinks button {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: black;
+  transition: background-color 0.3s, font-weight 0.3s, border 0.3s;
+  border: none;
+}
+
+.navLinks a:hover,
+.navLinks button:hover {
+  background-color: black;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+/* Hamburger Styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.8em;
+  color: white;
+  margin-left: auto;
+}
+
+/* Intro */
+.intro {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.job {
+  margin-bottom: 40px;
+}
+
+.jobTitle {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+
+.company {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.date {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* Certifications */
+.certGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.certGallery img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.certGallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Education Logos */
 .wgu img,
 .lamar img,
 section.lamar img {
@@ -125,195 +137,163 @@ section.lamar img {
   display: block;
 }
 
-/* Cert Gallery Image Resize */
-.certGallery img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-  margin: auto;
-  display: block;
-  transition: transform 0.3s;
+/* Contact Form */
+.contact {
+  text-align: center;
 }
-  
-  /* Contact Form */
-  .contact {
-    text-align: center;
-  }
-  
-  .contactForm {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: left;
-  }
-  
-  .contactForm input,
-  .contactForm textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    font-family: inherit;
-    font-size: 1em;
-    background-color: #222;
-    color: white;
-  }
-  
-  .contactForm input:focus,
-  .contactForm textarea:focus {
-    outline: 2px solid #9d0208;
-  }
-  
-  .contactForm button {
-    align-self: flex-start;
-    padding: 12px 24px;
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    text-transform: uppercase;
-    border: 1px solid white;
-    font-size: 1em;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: background 0.3s, transform 0.2s;
-  }
-  
-  .contactForm button:hover {
-    background-color: black;
-    font-weight: bold;
-    border: 1px solid white;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .primaryNav h2 {
-      font-size: 1.5em;
-    }
-  
-    .navLinks {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .certGallery {
-      grid-template-columns: 1fr;
-    }
-  }
 
-  .projects {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-  }
-  
-  .project {
-    background-color: #1a1a1a;
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-  }
-  
-  .project h3 {
-    margin-top: 0;
-  }
-  
-  .project a {
-    display: inline-block;
-    margin-top: 10px;
-    background-color: black;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .project a:hover {
-    background-color: black;
-    font-weight: bold;
-    border: 1px solid white;
-  }
-  
-  .cta {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .button {
-    background-color: black;
-    border: 1px solid white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background-color 0.3s;
-  }
-  
-  .button:hover {
-    font-weight: bold;
-  }
-  
-  .tech-stack {
-    margin-top: 30px;
-    text-align: center;
-  }
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
 
-  footer.socials {
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px;
-    border-top: 1px solid white;
-    background-color: black;
-  }
-  
-  footer.socials h3 {
-    margin-bottom: 10px;
-  }
-  
-  .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .social-links a {
-    color: white;
-    margin: 0 15px;
-    transition: transform 0.3s, color 0.3s;
-    display: inline-block;
-  }
-  
-  .social-links a:hover {
-    transform: scale(1.2);
-  }
-
-  .honors {
-    font-style: italic;
-    color: #ccc;
-  }
-
-  /* Hamburger Styles */
-.hamburger {
-  display: none;
-  cursor: pointer;
-  font-size: 1.8em;
+.contactForm input,
+.contactForm textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-family: inherit;
+  font-size: 1em;
+  background-color: #222;
   color: white;
-  margin-left: auto;
 }
 
-/* Hide navLinks by default on mobile */
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: 2px solid #9d0208;
+}
+
+.contactForm button {
+  align-self: flex-start;
+  padding: 12px 24px;
+  background: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contactForm button:hover {
+  font-weight: bold;
+}
+
+/* Footer */
+footer.socials {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 1px solid white;
+  background-color: black;
+}
+
+footer.socials h3 {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 15px;
+  transition: transform 0.3s, color 0.3s;
+  display: inline-block;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+  color: #9d0208;
+}
+
+.honors {
+  font-style: italic;
+  color: #ccc;
+}
+
+.projects {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.project {
+  background-color: #1a1a1a;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: black;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+  transition: background-color 0.3s;
+}
+
+.project a:hover {
+  font-weight: bold;
+}
+
+.cta {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button {
+  background-color: black;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  font-weight: bold;
+}
+
+.tech-stack {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Responsive Navigation */
 @media (max-width: 768px) {
   .primaryNav {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .primaryNav h2 {
+    font-size: 1.5em;
   }
 
   .hamburger {
     display: block;
+    margin-left: auto;
   }
 
   .navLinks {
@@ -333,10 +313,12 @@ section.lamar img {
     width: 100%;
     text-align: left;
     padding: 10px 20px;
+    box-sizing: border-box;
   }
 }
 
-  
-  
-  
-  
+@media (min-width: 769px) {
+  .hamburger {
+    display: none !important;
+  }
+}
