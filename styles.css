@@ -47,7 +47,7 @@ body {
   
   .navLinks a:hover,
   .navLinks button:hover {
-    background-color: #9d0208;
+    background-color: black;
     font-weight: bold;
     border: 1px solid white;
   }
@@ -164,12 +164,12 @@ section.lamar img {
   .contactForm button {
     align-self: flex-start;
     padding: 12px 24px;
-    background: linear-gradient(to right, #9d0208, #b3001a);
+    background: black;
     color: white;
     border: none;
     border-radius: 30px;
     text-transform: uppercase;
-    font-weight: bold;
+    border: 1px solid white;
     font-size: 1em;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -177,8 +177,9 @@ section.lamar img {
   }
   
   .contactForm button:hover {
-    background: linear-gradient(to right, #b3001a, #9d0208);
-    transform: translateY(-2px);
+    background-color: black;
+    font-weight: bold;
+    border: 1px solid white;
   }
   
   /* Responsive */
@@ -218,15 +219,16 @@ section.lamar img {
   .project a {
     display: inline-block;
     margin-top: 10px;
-    background-color: #9d0208;
+    background-color: black;
     padding: 8px 15px;
     border-radius: 5px;
-    font-weight: bold;
     transition: background-color 0.3s;
   }
   
   .project a:hover {
-    background-color: #c5001a;
+    background-color: black;
+    font-weight: bold;
+    border: 1px solid white;
   }
   
   
